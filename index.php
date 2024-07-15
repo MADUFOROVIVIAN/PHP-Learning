@@ -29,9 +29,10 @@
         <!-- <p><?php include './Learning/conditional.php'?></p> -->
         <!-- <p><?php include './Assignments/assign3.php'?></p> -->
         <!-- <p><?php include './Learning/Loops.php'?></p> -->
-        <p><?php include './Assignments/assign4.php'?></p>
+        <!-- <p><?php include './Assignments/assign4.php'?></p>
         <p><?php include './Assignments/assign5.php'?></p>
-        <p><?php include './Assignments/assign6.php'?></p>
+        <p><?php include './Assignments/assign6.php'?></p> -->
+        <p><?php include './Learning/Functions.php'?></p> 
 
        
        

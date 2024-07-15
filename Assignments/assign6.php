@@ -10,8 +10,7 @@ $employees =[
     ["ID" => "8", "department" => "Marketing", " salary" => 15000],
     ["ID" => "9", "department" => "Marketing", " salary" => 18000],
     ["ID" => "10", "department" => "HR", " salary" => 10000],
-    
-];
+    ];
 
     $increments = [
         "Marketing" => 0.10,
