@@ -1,6 +1,5 @@
-
-
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form inputs
     $num1 = $_POST['num1'];
@@ -34,6 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = "Invalid input!";
     }
 }
+
 ?>
 
 <!DOCTYPE html>
