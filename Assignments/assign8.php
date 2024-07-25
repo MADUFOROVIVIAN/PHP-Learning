@@ -66,10 +66,10 @@ public function callPrivateMethod() {
 $students = new Students("Kelvin", 30, "PHP", "Backend");
 
 // Accessing public methods to get private properties
-echo $students->getName() . "<br/>"; 
-echo $students->getAge() . "<br/>"; 
-echo $students->getCourse() . "<br/>"; 
-echo $students->getSkill() . "<br/>"; 
+// echo $students->getName() . "<br/>"; 
+// echo $students->getAge() . "<br/>"; 
+// echo $students->getCourse() . "<br/>"; 
+// echo $students->getSkill() . "<br/>"; 
 
 echo '<br>'; 
 
@@ -80,11 +80,11 @@ $students->setCourse("newPHP");
 $students->setSkill("newBackend");
 
 //  Accessing public methods to get updated private properties
-echo $students->getName() . "<br/>"; 
-echo $students->getAge() . "<br/>"; 
-echo $students->getCourse() . "<br/>"; 
-echo $students->getSkill() . "<br/>";
+// echo $students->getName() . "<br/>"; 
+// echo $students->getAge() . "<br/>"; 
+// echo $students->getCourse() . "<br/>"; 
+// echo $students->getSkill() . "<br/>";
 
 // Calling a private method via a public method
-echo $students->callPrivateMethod(); // Output: This is a private
+echo $students->PrivateMethod(); // Output: This is a private
 ?>

@@ -51,10 +51,107 @@
 // echo $user1->id . "<br/>";
 // echo $user1->skills . "<br/>";
 
-Class User{
-    static function welcomeMessage(){
-        echo "Welcome";
+class User {
+    var $name;
+    var $id;
+    var $skills;
+
+    function __construct($name, $id, $skills) {
+        $this->name = $name;
+        $this->id = $id;
+        $this->skills = $skills;
+    }
+
+    static function displayInfo($user) {
+        echo "My name is " . $user->name . ". My Id is " . $user->id . ". My skill is " . $user->skills . ".";
     }
 }
-User:: welcomeMessage();
+
+$user = new User("Tobi", 1, "Backend");
+User::displayInfo($user);
+
+class User {
+    public $name;
+    public $id;
+    public $skills;
+
+    function __construct($name, $id, $skills) {
+        $this->name = $name;
+        $this->id = $id;
+        $this->skills = $skills;
+    }
+
+    static function displayInfo($user) {
+        echo "My name is " . $user->name . ". My Id is " . $user->id . ". My skill is " . $user->skills . ".";
+    }
+}
+
+$user = new User("Tobi", 1, "Backend");
+ User::displayInfo($user);
+
+
+
+// $user1 = new User();
+// $user1-> name = "Tobi";
+// $user1-> id = 1;
+// $user1-> skills = "Backend";
+
+// echo $user1->name . "<br>";
+// echo $user1->id . "<br>";
+// echo $user1->skills . "<br>";
+
+
+
+
+// Class User{
+//     static function welcomeMessage(){
+//         echo "Welcome";
+//     }
+// }
+// User:: welcomeMessage();
+
+// class Football{
+//     private $club;
+//     private $manager;
+
+//     private displayTeam () {
+//         echo $this->$club . "" . $this->$manager;
+//     }
+// }
+
+// $myTeam = new Football("LiverpoolFC", "Arne Slot");
+// Football::displayTeam($myTeam);
+
+class Football {
+    private $club;
+    private $manager;
+
+    // Constructor to initialize properties
+    private function __construct($club, $manager) {
+        $this->club = $club;
+        $this->manager = $manager;
+    }
+
+    // Static method to display the team
+    private static function displayTeam($team) {
+        echo $team->club . " " . $team->manager;
+    }
+}
+
+// Create an instance of the Football class
+$myTeam = new Football("LiverpoolFC", "Arne Slot");
+
+// Call the static displayTeam method with the instance as an argument
+Football::displayTeam($myTeam);
+
+class Football {
+    private $club;
+    private $manager;
+      public function displayTeam() {
+        echo $this->club . "" . $this->manager;
+      }
+    }
+    
+    // $myTeam = new Football("Liverpoolfc", "Arne Slot");
+    // $myTeam->displayTeam();
 ?>
