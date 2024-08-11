@@ -44,4 +44,42 @@
   $myAccount = new Bank(25, 0, 500);
   $myAccount->deposit();
 
+  //class inheritance
+
+  class Vehicle {
+    public $maker;
+    public $model;
+
+    public function __construct ($maker, $model){
+        $this->maker = $maker;
+        $this->model = $model;
+    }
+
+    public function displayV(){
+        echo "My maker is " . $this->maker . " and my model is " . $this->model;
+    }
+}
+
+ class Car extends Vehicle {
+     public $color;
+     public function __construct($maker, $model, $color){
+        $this->maker = $maker;
+        $this->model = $model;
+        $this->color = $color;
+     }
+      
+     public function displayInfo(){
+        $this->displayV();
+        echo "My color is " . $this->color;
+     }
+
+ }
+
+ $car = new Car("Toyota", "Corolla", "Black");
+ $car->displayInfo();
+
+//  $car = new Vehicle("BMW", "2024");
+//  $car->displayV();
+
+
 ?>
